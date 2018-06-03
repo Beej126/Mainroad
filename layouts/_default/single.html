@@ -4,7 +4,7 @@
 	<article class="post">
 		<header class="post__header">
 			<h1 class="post__title">{{ .Title }}</h1>
-			{{- if or (not .Date.IsZero) .Params.categories }}<div class="post__meta meta">{{ partial "post_meta.html" . }}</div>{{ end }}
+			{{- if or (not .Date.IsZero) .Params.tags }}<div class="post__meta meta">{{ partial "post_meta.html" . }}</div>{{ end }}
 		</header>
 		<div class="post__content clearfix">
 			{{- if .Params.thumbnail }}
@@ -14,7 +14,6 @@
 			{{- end }}
 			{{ .Content }}
 		</div>
-		{{ partial "post_tags.html" . }}
 	</article>
 	{{ partial "authorbox.html" . }}
 	{{ partial "post_nav.html" . }}
