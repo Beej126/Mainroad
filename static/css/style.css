@@ -447,7 +447,7 @@ select {
 .divider {
 	height: 5px;
 	margin: 0;
-	background: #e64946;
+	background: #8bc34a5c;
 	border: 0;
 }
 
@@ -942,7 +942,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid #e64946;
+	border-bottom: 3px solid #8bc34a5c;
 }
 
 .widget__item {

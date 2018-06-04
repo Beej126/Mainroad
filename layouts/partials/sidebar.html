@@ -1,5 +1,6 @@
 <aside class="sidebar">
 	{{ partial "widgets/search.html" . }}
+	{{ if $.Scratch.Get "single"}}{{ partial "widgets/table-of-contents.html" . }}{{end}}
 	{{ partial "widgets/recent.html" . }}
 	{{ partial "widgets/categories.html" . }}
 	{{ partial "widgets/social.html" . }}
