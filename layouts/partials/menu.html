@@ -2,7 +2,7 @@
 <nav class="menu">
 	<ul class="menu__list">
 		{{- $currentNode := . }}
-		{{- range sort .Site.Menus.main }}
+		{{- range sort (where .Site.Menus.main "Name" "not in" (slice "Posts" "Archms")) }}
 		{{- if ne (.Name | lower) "archms" }}
 		<li class="menu__item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{end}}"><a class="menu__link" href="{{ .URL }}">{{ .Name }}</a></li>
 		{{- end }}
