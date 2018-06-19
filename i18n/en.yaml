@@ -34,7 +34,7 @@
 
 # Recent Posts widget
 - id: recent_title
-  translation: Recent Posts
+  translation: Recents
 
 # Social widget
 - id: social_title
